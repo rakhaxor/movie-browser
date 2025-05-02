@@ -1,0 +1,126 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.backButton {
+  padding: 8px 15px;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.favoriteButton {
+  padding: 8px 15px;
+  background-color: transparent;
+  border: 1px solid gold;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #333;
+  font-size: 1rem;
+}
+
+.favoriteButton.active {
+  background-color: gold;
+  color: #333;
+}
+
+.favoriteButton:hover {
+  background-color: rgba(255, 215, 0, 0.2);
+}
+
+.favoriteButton.active:hover {
+  background-color: #e6c200;
+}
+
+.movieInfo {
+  display: flex;
+  gap: 30px;
+}
+
+.posterContainer {
+  flex: 0 0 300px;
+}
+
+.poster {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.noPoster {
+  width: 100%;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  color: #666;
+}
+
+.details {
+  flex: 1;
+}
+
+.year {
+  font-weight: normal;
+  color: #666;
+}
+
+.meta {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.section {
+  margin-bottom: 25px;
+}
+
+.section h3 {
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.ratings {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.rating {
+  display: flex;
+  gap: 8px;
+}
+
+.ratingSource {
+  font-weight: bold;
+}
+
+.error {
+  color: #d9534f;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .movieInfo {
+    flex-direction: column;
+  }
+
+  .posterContainer {
+    flex: 0 0 auto;
+    margin-bottom: 20px;
+  }
+}
